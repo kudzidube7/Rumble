@@ -6,7 +6,7 @@
              x:Class="Rumble.MainPage">
 
     <StackLayout Orientation="Vertical" Margin="10">
-        
+
         <!--BLOCK ONE-->
         <StackLayout Orientation="Horizontal">
             <!--<Label Text="X" HorizontalOptions="StartAndExpand"></Label>-->
@@ -15,14 +15,22 @@
                     <FontImageSource Color="Black" Size="30" FontFamily="MdIcons" Glyph="{x:Static local:FontIcons.Close}"/>
                 </Image.Source>
             </Image>
-            <Label Text="rumble" FontSize="26" FontAttributes="Bold" TextColor="Black" HorizontalOptions="CenterAndExpand"></Label>
+            <StackLayout Orientation="Horizontal" Spacing="0" >
+                <Image VerticalOptions="EndAndExpand">
+                    <Image.Source>
+                        <FontImageSource Color="LightGreen" Size="30" FontFamily="MdIcons" Glyph="{x:Static local:FontIcons.Play}"/>
+                    </Image.Source>
+                </Image>
+                <Label Text="rumble" FontSize="26" FontAttributes="Bold" TextColor="Black" HorizontalOptions="CenterAndExpand"></Label>
+            </StackLayout>
+
             <Image VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand">
                 <Image.Source>
                     <FontImageSource Color="Black" Size="30" FontFamily="MdIcons" Glyph="{x:Static local:FontIcons.Magnify}"/>
                 </Image.Source>
             </Image>
         </StackLayout>
-        
+
         <!--BLOCK TWO-->
         <StackLayout Orientation="Vertical" Margin="0,50,0,0">
             <xct:AvatarView Text="KD" Source="https://avatars.githubusercontent.com/u/49208252?v=4" Size="150" HorizontalOptions="Center"/>
@@ -48,6 +56,7 @@
         </StackLayout>
 
         <!--BLOCK THREE-->
+        <StackLayout Orientation="Vertical">
             <StackLayout Orientation="Horizontal" Margin="10,50,10,0">
                 <Frame CornerRadius="10" Padding="0" HorizontalOptions="StartAndExpand" HeightRequest="100" WidthRequest="100">
                     <StackLayout Orientation="Vertical">
@@ -83,7 +92,6 @@
                 </Frame>
             </StackLayout>
 
-
             <StackLayout Orientation="Horizontal" Margin="10,10,10,0">
                 <Frame CornerRadius="10" Padding="0" HorizontalOptions="StartAndExpand" HeightRequest="100" WidthRequest="100">
                     <StackLayout Orientation="Vertical">
@@ -118,7 +126,9 @@
                     </StackLayout>
                 </Frame>
             </StackLayout>
-        
+        </StackLayout>
+
+
         <!--BLOCK FOUR-->
         <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" Margin="0,0,0,30">
             <Label Text="Sign Out" TextColor="Black"  FontSize="18" VerticalOptions="CenterAndExpand"/>
@@ -129,7 +139,7 @@
             </Image>
         </StackLayout>
 
-        
+
 
     </StackLayout>
 
