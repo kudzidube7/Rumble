@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit" 
+             xmlns:local="clr-namespace:Rumble.Fonts"
+             x:Class="Rumble.MainPage">
+
+    <StackLayout Orientation="Vertical" Margin="10">
+        
+        <!--BLOCK ONE-->
+        <StackLayout Orientation="Horizontal">
+            <!--<Label Text="X" HorizontalOptions="StartAndExpand"></Label>-->
+            <Image VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand">
+                <Image.Source>
+                    <FontImageSource Color="Black" Size="30" FontFamily="MdIcons" Glyph="{x:Static local:FontIcons.Close}"/>
+                </Image.Source>
+            </Image>
+            <Label Text="rumble" FontSize="26" FontAttributes="Bold" TextColor="Black" HorizontalOptions="CenterAndExpand"></Label>
+            <Image VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand">
+                <Image.Source>
+                    <FontImageSource Color="Black" Size="30" FontFamily="MdIcons" Glyph="{x:Static local:FontIcons.Magnify}"/>
+                </Image.Source>
+            </Image>
+        </StackLayout>
+        
+        <!--BLOCK TWO-->
+        <StackLayout Orientation="Vertical" Margin="0,50,0,0">
+            <xct:AvatarView Text="KD" Source="https://avatars.githubusercontent.com/u/49208252?v=4" Size="150" HorizontalOptions="Center"/>
+            <Label Text="Kudzai Dube" FontSize="26" HorizontalOptions="CenterAndExpand"/>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="0,50,0,0" >
+                <StackLayout Orientation="Vertical" >
+                    <Label Text="17" HorizontalTextAlignment="Center" FontSize="18" TextColor="LightGreen"/>
+                    <Label Text="Rumbles" FontSize="16" TextColor="Black" FontAttributes="Bold"/>
+                </StackLayout>
+
+
+                <StackLayout Orientation="Vertical" Margin="50,0,50,0">
+                    <Label Text="2,176" HorizontalTextAlignment="Center" FontSize="18" TextColor="LightGreen"/>
+                    <Label Text="Followers" FontSize="16" TextColor="Black" FontAttributes="Bold"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Vertical">
+                    <Label Text="374" HorizontalTextAlignment="Center" FontSize="18" TextColor="LightGreen"/>
+                    <Label Text="Followings" FontSize="16" TextColor="Black" FontAttributes="Bold"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+
+        <!--BLOCK THREE-->
+            <StackLayout Orientation="Horizontal" Margin="10,50,10,0">
+                <Frame CornerRadius="10" Padding="0" HorizontalOptions="StartAndExpand" HeightRequest="100" WidthRequest="100">
+                    <StackLayout Orientation="Vertical">
+                        <Image VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+                            <Image.Source>
+                                <FontImageSource Color="LightGreen" Size="30" FontFamily="MdIcons" Glyph="{x:Static local:FontIcons.AccountOutline}"/>
+                            </Image.Source>
+                        </Image>
+                        <Label Text="Profile" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" VerticalOptions="StartAndExpand"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame CornerRadius="10" Padding="0" HorizontalOptions="CenterAndExpand" HeightRequest="100" WidthRequest="100">
+                    <StackLayout Orientation="Vertical">
+                        <Image VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+                            <Image.Source>
+                                <FontImageSource Color="LightGreen" Size="30" FontFamily="MdIcons" Glyph="{x:Static local:FontIcons.CogOutline}"/>
+                            </Image.Source>
+                        </Image>
+                        <Label Text="Settings" TextColor="Black"  HorizontalTextAlignment="Center" VerticalTextAlignment="Start" VerticalOptions="StartAndExpand"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame CornerRadius="10" Padding="0" HorizontalOptions="EndAndExpand" HeightRequest="100" WidthRequest="100">
+                    <StackLayout Orientation="Vertical">
+                        <Image VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+                            <Image.Source>
+                                <FontImageSource Color="LightGreen" Size="30" FontFamily="MdIcons" Glyph="{x:Static local:FontIcons.AccountPlusOutline}"/>
+                            </Image.Source>
+                        </Image>
+                        <Label Text="Refferals" TextColor="Black"  HorizontalTextAlignment="Center" VerticalTextAlignment="Start" VerticalOptions="StartAndExpand"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+
+
+            <StackLayout Orientation="Horizontal" Margin="10,10,10,0">
+                <Frame CornerRadius="10" Padding="0" HorizontalOptions="StartAndExpand" HeightRequest="100" WidthRequest="100">
+                    <StackLayout Orientation="Vertical">
+                        <Image VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+                            <Image.Source>
+                                <FontImageSource Color="LightGreen" Size="30" FontFamily="MdIcons" Glyph="{x:Static local:FontIcons.LayersTripleOutline}"/>
+                            </Image.Source>
+                        </Image>
+                        <Label Text="Subscriptions" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" VerticalOptions="StartAndExpand"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame CornerRadius="10" Padding="0" HorizontalOptions="CenterAndExpand" HeightRequest="100" WidthRequest="100">
+                    <StackLayout Orientation="Vertical">
+                        <Image VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+                            <Image.Source>
+                                <FontImageSource Color="LightGreen" Size="30" FontFamily="MdIcons" Glyph="{x:Static local:FontIcons.BellOutline}"/>
+                            </Image.Source>
+                        </Image>
+                        <Label Text="Notifications" TextColor="Black"  HorizontalTextAlignment="Center" VerticalTextAlignment="Start" VerticalOptions="StartAndExpand"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame CornerRadius="10" Padding="0" HorizontalOptions="EndAndExpand" HeightRequest="100" WidthRequest="100">
+                    <StackLayout Orientation="Vertical">
+                        <Image VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+                            <Image.Source>
+                                <FontImageSource Color="LightGreen" Size="30" FontFamily="MdIcons" Glyph="{x:Static local:FontIcons.InformationOutline}"/>
+                            </Image.Source>
+                        </Image>
+                        <Label Text="Official Rules" TextColor="Black"  HorizontalTextAlignment="Center" VerticalTextAlignment="Start" VerticalOptions="StartAndExpand"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        
+        <!--BLOCK FOUR-->
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" Margin="0,0,0,30">
+            <Label Text="Sign Out" TextColor="Black"  FontSize="18" VerticalOptions="CenterAndExpand"/>
+            <Image VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+                <Image.Source>
+                    <FontImageSource Color="LightGray" Size="30" FontFamily="MdIcons" Glyph="{x:Static local:FontIcons.Logout}"/>
+                </Image.Source>
+            </Image>
+        </StackLayout>
+
+        
+
+    </StackLayout>
+
+</ContentPage>
